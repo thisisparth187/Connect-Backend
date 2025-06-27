@@ -17,10 +17,10 @@ const App = () => {
     return (
         <div>
             {user.map((data, index) => (
-                <div key={index}>
-                    <h1>Name: {data.name}</h1>
-                    <h1>Username: {data.username}</h1>
-                    <h1>Email: {data.email}</h1>
+                <div key={index} className='p-4 m-2 border-3'>
+                    <h4>Name: {data.name}</h4>
+                    <h4>Username: {data.username}</h4>
+                    <h4>Email: {data.email}</h4>
                 </div>
             ))}
         </div>
